@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Exercises</title>
+        <style>
+            .container-12a {
+                display: flex;
+                flex-direction: row; /*추가*/
+            }
+            .container-12b {
+                display: flex;
+                flex-direction: row; /*추가*/
+            }
+            .container-12c {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row; /*추가*/
+            }
+            .container-12d {
+                display: flex;
+                border: 1px solid gray;
+                height: 50px;
+                justify-content: space-between;
+                flex-direction: row; /*추가*/
+                align-items: center; /*추가*/
+            }
+            .container-12e {
+                border: 1px solid gray;
+                border-radius: 10px;
+                width: 300px;
+            }
+            .text, .num {
+                font-family: Arial;
+                font-size: 15px;
+                font-weight: 700;
+                margin: 0;
+            }
+            .flex-12e {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 15px 10px 15px;
+            }
+            .num {
+                 color: white;
+                 background-color: yellow;
+                 border-radius: 10px;
+                 padding: 3px 13px 3px 13px;
+            }
+
+            .flex-cats {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            .catimg {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 25px;
+                margin-right: 15px;
+            }
+            .catname, .cattype, .catpopular {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .flex2-cats {
+                width: 200px;
+            }
+            .catname {
+                font-weight: 700;
+                margin-bottom: 3px;
+            }
+            .cattype {
+                color: gray;
+                margin-bottom: 5px;
+            }
+            .catpopular {
+                color: gray;
+                font-size: 14px;
+            }
+            .catbutton {
+                background-color: blue;
+                color: white;
+                border: none;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 10px 15px 10px 15px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            /*12f 문제의 css에서는 div를 다 묶어서 font-family를 만들어줌
+            div { 
+                font-family: Arial;
+            }*/
+            .container-12f {
+                display: flex;
+                flex-direction: row;
+                background-color: purple;
+                color: white;
+                align-items: center;
+                padding-left: 15px;
+                padding-right: 15px;
+                justify-content: space-between;
+            }
+            .home {
+                font-weight: bold;
+            }
+            .search {
+                height: 30px;
+                background-color: yellow;
+                border: 0;
+                border-radius: 30px;  
+                width: 500px;
+                border-radius: 15px;
+                padding-left: 20px;
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+            .download {
+                border: 1px solid yellow;
+                border-radius: 2px;
+                background-color: purple;
+                padding: 8px 15px 8px 15px;
+                color: white;
+                font-size: 15px;
+                cursor: pointer;
+            }
+</style>
+    </head>
+    <body>
+        <p>12f</p>
+        <div class="container-12f">
+            <p class="home">Home</p> <!--정답에서는 p태그 말고 div로 묶음-->
+            <input class="search" type="text" placeholder="Search">
+            <button class="download">Download</button>
+        </div>
+
+        <p>12g</p>
+        <!--12g의 html은 다 맞았음 -->
+        <div class="flex-cats">
+            <img class="catimg" src="thumbnails/cat1.png">
+            <div class="flex2-cats">
+                <p class="catname">Oliver</p>
+                <p class="cattype">the cat</p>
+                <p class="catpopular">Popular</p>
+            </div>
+            <button class="catbutton">Follow</button>
+        </div>
+        <div class="flex-cats">
+            <img class="catimg" src="thumbnails/cat2.png">
+            <div class="flex2-cats">
+                <p class="catname">Mimi</p>
+                <p class="cattype">Sleepy Cat</p>
+                <p class="catpopular">Popular</p>
+            </div>
+            <button class="catbutton">Follow</button>
+        </div>
+        <div class="flex-cats">
+            <img class="catimg" src="thumbnails/cat3.png">
+            <div class="flex2-cats">
+                <p class="catname">Rex</p>
+                <p class="cattype">Happy Bulldog</p>
+                <p class="catpopular">Popular</p>
+            </div>
+            <button class="catbutton">Follow</button>
+        </div>              
+
+
+        <p>12e</p>
+        <div class=container-12e>
+            <div class="flex-12e">
+                <div class="text">Home</div>
+                <div class="num">14</div>
+            </div>
+            <div class="flex-12e">
+                <div class="text">Notifications</div>
+                <div class="num">3</div>
+            </div>
+            <div class="flex-12e">
+                <div class="text">Messages</div>
+                <div class="num">5</div>
+            </div>
+        </div>
+    
+        <p>12a</p>
+        <div class="container-12a">
+            <div style="background-color: lightblue; width: 200px;">200px</div>
+            <div style="background-color: lightpink; width: 75px;">75px</div>
+        </div>
+        <p>12b</p>
+        <div class="container-12b">
+            <div style="background-color: lightblue; width: 50px;">item1</div>
+            <div style="background-color: lightpink; flex: 1;">item2</div>
+            <div style="background-color: lightblue; width: 75px;">item3</div>
+        </div>
+        <p>12c</p>
+        <div class="container-12c">
+            <div style="background-color: lightpink;">item1</div>
+            <div style="background-color: lightpink;">item2</div>
+            <div style="background-color: lightpink;">item3</div>
+            <div style="background-color: lightpink;">item4</div>
+        </div>
+        <p>12d</p>
+        <div class="container-12d">
+            <div style="background-color: lightpink; ">item1</div>
+            <div style="background-color: lightpink;">item2</div>
+        </div>
+    </body>
+</html>
